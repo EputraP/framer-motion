@@ -1,3 +1,6 @@
+:root {
+  --color1: #12c2e9;
+}
 .example-button {
   background-color: rgb(86, 1, 245);
   color: white;
@@ -6,4 +9,35 @@
   border: none;
   padding: 0.4rem 0, 8rem;
   cursor: pointer;
+}
+.progress-wheel {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+.progress-wheel circle {
+  stroke-dashoffset: 0;
+  stroke-width: 30%;
+  fill: none;
+}
+
+.progress-wheel .bg {
+  stroke: var(--accent);
+  opacity: 0.2;
+}
+
+.progress-wheel .progress {
+  stroke: var(--accent);
+  stroke-dasharray: 0, 1;
+}
+
+.circle-background {
+  fill: none;
+  stroke: #dddd;
+}
+.circle-progress {
+  fill: none;
+  stroke: var(--color1);
 }
